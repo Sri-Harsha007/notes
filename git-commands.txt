@@ -1,0 +1,166 @@
+
+git --version
+// to know version
+
+
+git config --global user.name "name"
+git config --global user.email "email"
+// set username and email
+
+
+git config --list
+// get list of config settings
+
+
+git config user.name (to see any of the congig list, type here)
+// specific config detail
+
+clear
+// for clearing screen
+
+git help
+// for help
+
+git help (specific like commit)
+// help about a specific thing
+
+pwd
+// present working directory
+
+cd ~ 
+// to home directory
+
+git init
+// tell git bash that this folder is the project to work on( git project ~ git repository)
+
+ls -la
+// get hidden files
+
+git add .
+// add all changes to project
+
+git add (file name)
+// to add the specific file  
+
+--> working directory > staging area > repository
+--> working directory --> local computer
+--> staging area --> files ready to be committed
+--> repository --> git project folder
+
+git commit -m "message"
+// commit changes to git ( tell git to keep track of changes)
+
+git commit -am "message"
+// commit changes to git with moving to statging. Directly from working copy to repository. (Don't use often)
+
+git log 
+// see the commit history
+
+git log --author="name"
+// to see comit log of a specific user if many users are working
+
+git status
+// tells what files(new and modified files) are to be commit and tells the branch 
+
+git diff
+// views changes to all files in working directory (difference between the files in working directory and repository)
+
+git diff (file-name)
+// show changes in file name only
+
+git diff --staged
+// difference between files in staging area and repository
+
+git rm (file-name) 
+// deletes file. After deleting you should commit changes
+
+git mv (filename) (folder-path)
+// to move file to other folder of same project
+
+git mv (filename) (folder-path/new-name)
+// to move file to other folder of same project and rename it
+
+git checkout -- (filename)
+// undo changes to the file
+
+git reset HEAD (filename)
+// move from staging area to working copy
+
+git reset
+// move all files from staging area to working copy
+
+git checkout (commit-number) -- (file-name)
+// get older version of my in commit (commit-number)
+
+git checkout (commit-number) .
+// get older version of whole project
+
+// FOR GITHUB
+
+git remote add (repoName) (link)
+// connect git bash to github
+
+rm -rf .git
+// stop tracking this project
+
+touch .gitignore
+// creates one file where we want to specify the files to be ignored by git
+
+git clone (link) (path)
+// clone from git to file-path
+
+git pull (repo-name) (branch)
+// get any changes to files
+
+git branch (branch-name)
+// create branch
+
+git checkout (branch-name)
+// move to that branch
+
+git branch
+// list branches
+
+git branch --merge
+// initiate merge
+
+git merge (branch-name)
+// merges to branch master. push changes to master again
+
+// to delete a branch
+
+git branch -d (branch-name)
+// to delete from local
+
+git branch -a
+// to see the branches
+
+git push (reponame) --delete (branch-name)
+// make changes in github (or similar)
+
+git commit --amend -m "msg"
+// change message of commit
+
+git stash save "msg"
+// creates a stash where we can make changes (like temporary folder)
+
+git stash list
+// gives list of stash
+
+git stash apply stash@{id}
+// getting back the changes to work (doesnot delete stash)
+
+git stash pop
+// get the top most stash and deletes the stash 
+
+git stash drop stash@{id}
+// removes the stash at that id
+
+git stash clear 
+// clear all the stash
+
+git reset
+// staging area to working space
+
+git add -A 			--> All files
+git add -A (directory-path) 	--> all files in that directory
