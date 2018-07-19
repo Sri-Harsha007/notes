@@ -1,0 +1,10 @@
+-> Dependency injection is a way to remove dependency between two classes. 
+-> The way we create is through a bean factory. This factory creates objects or beans for us. It will contact the spring xml file(configuration file) and creates the object.
+-> Application context is a class which is similar to bean factory but does more that what bean factory does (like AOP etc). 
+-> Setter Injection and Constructor Instructor injection are two types of injection.
+-> Autowire is a automatic method to assign beans to variables. Three types: byName, byType, Constructor
+	-> byName => variable name = id of bean
+	-> by type => if there is only one variable of a type then xml should contain only one bean of same type
+	-> Constructor => initiazing constructors automatically
+-> Singleton and prototype (bean scope) ==> scope="prototype"
+-> 

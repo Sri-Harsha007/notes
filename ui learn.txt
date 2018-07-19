@@ -1,0 +1,13 @@
+-> Create user and role
+-> create app
+-> load all controls in upload_all.sh
+-> Add configuration and alias
+-> for familiarization go to jiffyUiFamiliarization.config file in JS
+-> update your ip and port
+-> Do familiarization and login with the created user
+-> Update to db
+-> RUn all including jsm in your machine
+-> change ip in jiffy.properties file
+-> change ip in jiffyservide.bat
+-> run js in user machine
+-> run the desktop node with controls
